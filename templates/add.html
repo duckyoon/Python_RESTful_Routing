@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Add Movie{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Add a Movie</h1>
+    {{ wtf.quick_form(form, novalidate=True)}}
+</div>
+
+{% endblock %}
